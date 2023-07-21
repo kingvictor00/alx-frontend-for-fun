@@ -1,14 +1,10 @@
-/* Nested and nested again */
-
+/* test debug */
 body {
-    font-size: 14px;
-  
-    h1 {
-      font-size: 16px;
-  
-      &.smaller {
-        font-size: 12px;
-      }
+  font-size: 14px;
+  h1 {
+    font-size: 16px;
+    .smaller {
+      font-size: 12px;
     }
   }
-  
+}

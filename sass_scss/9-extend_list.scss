@@ -1,20 +1,18 @@
-/*  Extended */
+/* test debug */
+%shared {
+  font-size: 12px;
+}
 
-@mixin info {
-    font-size: 12px;
-  }
-  
-  .info {
-    @include info;
-  }
-  
-  .success {
-    @extend .info;
-    color: #00FF00;
-  }
-  
-  .warning {
-    @extend .info;
-    color: #FF0000;
-  }
-  
+.info {
+  @extend %shared
+}
+
+.success {
+  color: #00ff00;
+  @extend %shared
+}
+
+.warning {
+  color: #ff0000;
+  @extend %shared
+}

@@ -1,7 +1,6 @@
-/* Creates classes with different width */
-
-@for $item from 1 through 4 {
-    .col-#{$item} {
-      width: 100% / $item;
-    }
+/* test debug */
+@for $i from 1 through 4 {
+  .col-#{$i} {
+    width: 100% / $i;
   }
+}

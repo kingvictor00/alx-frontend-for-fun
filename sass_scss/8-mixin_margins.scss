@@ -1,15 +1,12 @@
-/* Margin Maxin */
+/* test debug */
+@mixin horizontal($size: 10px) {
+  margin-left: $size;
+  margin-right: $size;
+}
+body {
+  @include horizontal;
+}
 
-@mixin margin-left-right($value) {
-    margin-left: $value;
-    margin-right: $value;
-  }
-  
-  body {
-    @include margin-left-right(10px);
-  }
-  
-  div {
-    @include margin-left-right(15px);
-  }
-  
+div {
+  @include horizontal($size: 15);
+}

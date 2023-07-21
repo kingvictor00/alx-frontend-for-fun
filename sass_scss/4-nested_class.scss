@@ -1,10 +1,9 @@
-/* Nested class */
-
+/* test debug */
+$pryColor: #3D3D3D;
+$secColor: #FF0000;
 body {
-    color: #3D3D3D;
-    
-    .red {
-      color: #FF0000;
-    }
+  color: $pryColor;
+  .red {
+	color: $secColor;
   }
-  
+}
